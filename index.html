@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment #3 - Responsive Web Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Student Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#part1">Part 1 (Media Queries)</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#part2">Part 2 (Bootstrap Grid)</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#part3">Part 3 (Portfolio)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+
+        <section id="part1" class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h2 class="border-bottom pb-2 mb-4">Part 1. Media Queries</h2>
+
+            <div class="mb-4">
+                <h4>Task 0: Responsive Typography</h4>
+                <h1 class="task0-heading">Responsive Heading Text</h1>
+                <p class="task0-text">Resize your browser window to watch this text automatically scale across mobile, tablet, and desktop breakpoints via pure CSS media queries.</p>
+            </div>
+
+            <hr>
+
+            <div>
+                <h4 class="mb-3">Task 1: Pure CSS Responsive Layout</h4>
+                <div class="task1-container">
+                    <div class="task1-box">Box 1</div>
+                    <div class="task1-box">Box 2</div>
+                    <div class="task1-box">Box 3</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="part2" class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h2 class="border-bottom pb-2 mb-4">Part 2. Bootstrap Grid System</h2>
+
+            <h4>Task 2: Bootstrap Responsive Columns</h4>
+            <div class="row g-3 mt-2">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-4 bg-primary text-white rounded text-center fw-bold">Column 1</div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-4 bg-secondary text-white rounded text-center fw-bold">Column 2</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="p-4 bg-success text-white rounded text-center fw-bold">Column 3</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="part3" class="p-4 bg-white rounded shadow-sm">
+            <h2 class="border-bottom pb-2 mb-4">Part 3. Task 4: Responsive Portfolio Page</h2>
+
+            <div class="row g-4">
+                <main class="col-lg-8">
+                    <h3 class="portfolio-section-title mb-4">Portfolio Projects</h3>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 shadow-sm project-card">
+                                <img src="images.jpg" class="card-img-top" alt="E-Commerce App">
+                                <div class="card-body">
+                                    <h5 class="card-title">E-Commerce Web App</h5>
+                                    <p class="card-text">A full-featured web shop built using modern front-end techniques.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 shadow-sm project-card">
+                                <img src="stock-vector-weather-forecast-poster-with-temperature-humidity-and-pressure-realistic-vector-illustration-1711691812.jpg" class="card-img-top" alt="Weather Dashboard">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weather Dashboard</h5>
+                                    <p class="card-text">Real-time weather data visualization web application.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 shadow-sm project-card">
+                                <img src="task-management-in-project-management-banner-image.jpg" class="card-img-top" alt="Task Manager">
+                                <div class="card-body">
+                                    <h5 class="card-title">Task Management UI</h5>
+                                    <p class="card-text">Responsive project tracking dashboard with fluid layouts.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 shadow-sm project-card">
+                                <img src="images1.jpg" class="card-img-top" alt="Portfolio Template">
+                                <div class="card-body">
+                                    <h5 class="card-title">Portfolio Template</h5>
+                                    <p class="card-text">Clean, modular template designed for developer portfolios.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <aside class="col-lg-4">
+                    <div class="p-4 bg-light rounded border sticky-top" style="top: 80px;">
+                        <div class="text-center mb-3">
+                            <img src="avatar.jpg" class="rounded-circle img-thumbnail" alt="Profile Picture">
+                        </div>
+                        <h4>About Me</h4>
+                        <p class="text-muted sidebar-bio">Hello! I am Amanov Alikhan taking the Web Technologies.</p>
+                        <hr>
+                        <h5>Contact Details</h5>
+                        <ul class="list-unstyled mb-0 sidebar-contact">
+                            <li><strong>Email:</strong> 254505@astanait.edu.kz</li>
+                            <li><strong>Location:</strong> Astana, Kazakhstan</li>
+                            <li><strong>GitHub:</strong> https://github.com/amanovali571-star</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Amanov Alikhan Astana IT University</p>        
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
